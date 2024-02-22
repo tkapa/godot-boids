@@ -21,8 +21,11 @@ func _process(delta):
 	velocity.x += 1
 	velocity = velocity.normalized() * speed
 	
-	position += velocity * delta
 	
+	var newPos = position + velocity * delta
+	look_at(newPos)
+	
+	position = newPos
 	# TODO - Wrap position when leaving the screen
 	position = position.clamp(Vector2.ZERO, screen_size)
 	pass
