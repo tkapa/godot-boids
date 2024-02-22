@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxxx72orw2xxr"]
+
+[ext_resource type="PackedScene" uid="uid://bvo3fphn1dp35" path="res://scenes/boid.tscn" id="1_kfwvy"]
+
+[node name="Main" type="Node"]
+
+[node name="Boid3" parent="." instance=ExtResource("1_kfwvy")]
+position = Vector2(97, 117)
+
+[node name="Boid" parent="." instance=ExtResource("1_kfwvy")]
+position = Vector2(51, 276)
+
+[node name="Boid2" parent="." instance=ExtResource("1_kfwvy")]
+position = Vector2(46, 183)
